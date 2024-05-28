@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from accounts.models import UserModel, UserConfirmationModel
+from .models import User, UserConfirmation
 
-admin.register(UserModel)
-admin.register(UserConfirmationModel)
+admin.site.register(User)
+admin.site.register(UserConfirmation)
